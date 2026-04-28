@@ -1,0 +1,90 @@
+/* VARIABLES */
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --text: #e6edf3;
+  --primary: #238636;
+  --danger: #da3633;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: var(--card);
+}
+
+/* BUTTON */
+.btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background: gray;
+  color: white;
+  left: 100px;
+  border-radius: 10px;
+}
+
+.btn.primary {
+  background: var(--primary);
+}
+
+/* SEARCH */
+.search {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* STATES */
+.hidden {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .search {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

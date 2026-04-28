@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Finder</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header class="navbar">
+
+  <!-- LEFT -->
+  <div class="left">
+    <i class="fa-brands fa-github"></i>
+    <h1 class="logo">GitHub Finder</h1>
+  </div>
+
+  <!-- RIGHT -->
+  <button class="btn">
+    Favoris (<span class="count">0</span>)
+  </button>
+
+</header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- SEARCH -->
+    <section class="search">
+      <input type="text" placeholder="Rechercher un utilisateur...">
+      <button class="btn primary">Rechercher</button>
+    </section>
+
+    <!-- WELCOME STATE -->
+    <section class="welcome">
+      <h2>Trouver des utilisateurs GitHub</h2>
+      <p>Recherchez n'importe quel nom d'utilisateur GitHub pour commencer</p>
+    </section>
+
+    <!-- LOADING -->
+    <section class="loading hidden">
+      <p>Chargement...</p>
+    </section>
+
+    <!-- ERROR -->
+    <section class="error hidden">
+      <p>Utilisateur introuvable ❌</p>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="profile hidden">
+      <div class="card">
+        <img src="" alt="avatar">
+        <h3>Nom utilisateur</h3>
+        <p>Bio utilisateur</p>
+      </div>
+    </section>
+
+    <!-- REPOSITORIES -->
+    <section class="repos hidden">
+      <h3>Repositories</h3>
+      <div class="repo-list">
+        <!-- repos cards -->
+      </div>
+    </section>
+
+    <!-- FAVORITES -->
+    <section class="favorites hidden">
+      <h3>Favoris</h3>
+      <div class="fav-list"></div>
+    </section>
+
+  </main>
+
+ 
+
+</body>
+</html>
