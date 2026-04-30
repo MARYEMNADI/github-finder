@@ -1,6 +1,6 @@
 
 #  GitHub Finder
-
+![GitHub Finder](./images/Capture%20d'écran%202026-04-30%20162909.png)
 ## Description
 Application web pour rechercher des utilisateurs GitHub.
 
